@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glamkey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section with Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home">Glamkey</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#offers">Trending Offers</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+     
+<!-- <li><a href="#signin" class="signin-btn">Sign In</a></li> -->
+
+<li><a href="#signin" class="signin-btn" onclick="openSignIn()">Sign In</a></li>
+
+  <!-- Sign In Modal -->
+  <div id="signinModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeSignIn()">&times;</span>
+      <h2>Sign In</h2>
+
+      
+
+       <form action="#" method="POST">
+
+   
+
+        <label for="name"> Your Name:</label>
+ <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"placeholder="Your Email"  required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"placeholder="Your Phone Number"  required><br>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form> 
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to handle modal open and close
+    function openSignIn() {
+      document.getElementById('signinModal').style.display = "block";
+    }
+
+    function closeSignIn() {
+      document.getElementById('signinModal').style.display = "none";
+    }
+  </script>
+
+
+</ul>
+    </nav>
+  </header>
+
+
+
+  <section class="fullscreen-slider">
+    <div class="slide active">
+      <img src="./Images/Product_1.webp" alt="Product 1">
+      <div class="overlay-text">
+       
+      </div>
+    </div>
+    <div class="slide">
+      <img src="./Images/product_2.jpg" alt="Product 2">
+      <div class="overlay-content">
+      
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="./Images/product_3.jpg" alt="Product 3">
+      <div class="overlay-content">
+       
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="./Images/product_4.webp" alt="Product 4">
+      <div class="overlay-content">
+       
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="./Images/product_5.jpg" alt="Product 5">
+      <div class="overlay-content">
+        <!-- <h2>Product 2</h2>
+        <p>$129.99</p>
+        <a href="#" class="cta-btn">Shop Now</a> -->
+
+        <!-- <a href="#" class="explore-button">Explore Now</a> -->
+
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="./Images/product_6.jpg" alt="Product 6">
+      <div class="overlay-content">
+      
+
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="./Images/product_7.jpg" alt="Product 7">
+      <div class="overlay-content">
+       
+      </div>
+    </div>
+
+   
+
+    <!-- Add more slides as needed -->
+    <button class="prev" onclick="changeSlide(1)">❮</button>
+    <button class="next" onclick="changeSlide(1)">❯</button>
+  </section>
+ 
+
+<br> 
+
+
+
+  <!-- Product Showcase Section -->
+  <section class="product-showcase" id="shop">
+    <h1>Rings to Cherish Forever</h1>
+    <p>Celebrate Forever with the Perfect Engagement Ring</p>
+
+
+
+
+    <br>
+    <div class="products">
+      <div class="product-item">
+        <img src="./Images/jewellery_1.webp" alt="Jewelry 1">
+        <p>Fancy Glossy Gold and Diamond Finger Ring</p>
+        <p>₹37 130
+        </p>
+      </div>
+       <div class="product-item">
+        <img src="./Images/jewellery_2.webp" alt="Jewelry 2">
+        <p>Delightful 18 Karat Yellow Gold And Diamond Floral Ring</p>
+        <p>₹46 808</p>
+      </div> 
+       <div class="product-item">
+        <img src="./Images/jewellery_3.webp" alt="Jewelry 3">
+        <p>Eternal Radiance Diamond Finger Ring</p>
+        <p>₹1 42 961</p>
+      </div> 
+
+       <div class="product-item">
+        <img src="./Images/jewellery_4.webp" alt="Jewelry 4">
+        <p>Eternal Radiance Diamond Finger Ring</p>
+        <p>₹1 42 961</p>
+      </div> 
+
+       <div class="product-item">
+        <img src="./Images/jewellery_5.webp" alt="Jewelry 5">
+        <p>Majestic Platinum Solitaire Finger Ring for Men</p>
+        <p>₹21 891
+        </p>
+      </div> 
+
+   
+
+      <div class="product-item">
+        <img src="./Images/diamonds.webp" alt="Jewelry 7">
+        <p> Golden Finger Ring for Men</p>
+        <p>₹21 891
+        </p>
+      </div>
+
+
+      <div class="product-item">
+        <img src="./Images/jewellery_8.webp" alt="Jewelry 8">
+        <p> Golden Finger Ring for Men</p>
+        <p>₹21 891
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Category types  Section -->
+  <section class="category-showcase" id="shop1">
+    <h1>Shop By Category</h1>
+    <p>Browse through your favorite categories. We've got them all!</p>
+
+    <br>
+    <div class="category">
+      <div class="category-item">
+        <img src="./Images/category_1.jpeg" alt="Jewelry 1">
+        <p> Charming Floral Gold Necklace and earings</p>
+        <br>
+        <b>₹37 130
+        </b>
+      </div>
+       <div class="product-item">
+        <img src="./Images/category_2.jpeg" alt="Jewelry 2">
+        <p>Charming Floral Diamond Mangalsutra</p>
+       <br> <b>₹85 747 </b>
+      </div> 
+       <div class="product-item">
+        <img src="./Images/category_3.jpeg" alt="Jewelry 3">
+        <p>Graceful Charm Floral Ring</p>
+        <br>
+        <b>₹25 600
+        </b>
+      </div> 
+
+       <div class="product-item">
+        <img src="./Images/category_4.jpeg" alt="Jewelry 4">
+        <p>Lustrous Infinity Diamond Pendant</p>
+       <br> <b>₹ 30324</b> 
+      </div> 
+
+       <div class="product-item">
+        <img src="./Images/category_5.jpeg" alt="Jewelry 5">
+        <p>Dynamic Gold Pendant</p>
+      <br>  <b>₹24 788 </b>
+      </div> 
+
+   
+
+      <div class="product-item">
+        <img src="./Images/category_6.jpeg" alt="Jewelry 6">
+        <p>Bangles</p>
+       <br> <b>₹21 891
+        </b>
+      </div>
+
+
+      <div class="product-item">
+        <img src="./Images/category_7_1.jpeg" alt="Jewelry 7">
+        <p> Sparkling Hearts Diamond Necklace</p>
+        <p>₹21 891
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- About Section -->
+   <section class="about" id="about">
+    <h2>Jewellery Guides</h2>
+    <p>Check out our ready made guides to make your buying process easier.</p>
+  </section> 
+
+
+
+
+
+      <section class="jewellery-guides">
+        <h2>Find Your Perfect Sparkle for Every Occasion</h2>
+        <p>Explore similar styles</p>
+        <br><br>
+        <div class="guides-container">
+            <div class="guide-card">
+                <h3>Find Your Ring Size</h3>
+                <img src="./Images/d.jpg" alt="Ring Image">
+                <a href="#" class="explore-btn">Explore More →</a>
+            </div>
+
+            
+
+               <div class="guides-container">
+                <div class="guide-card">
+                    <h3>The Bangles Size </h3>
+                    <img src="./Images/BANGLES.png" alt="Ring Image">
+                    <a href="#" class="explore-btn">Explore More →</a>
+                </div>
+
+                <div class="guides-container">
+                  <div class="guide-card">
+                      <h3> 24k Pure Gold Necklace </h3>
+                      <img src="./Images/ring_2.1.jpg" alt="Ring Image">
+                      <a href="#" class="explore-btn">Explore More →</a>
+                  </div>
+
+
+            
+            <div class="guide-card">
+                <h3>The Jewellery Care Guide</h3>
+                <img src="./Images/ring.jpg" alt="Couple Ring">
+                <a href="#" class="explore-btn">Explore More →</a>
+            </div>
+
+  
+
+
+        </div> 
+    </section>
+
+
+    <section class="jewellery-guides1">
+      <h2>Shop By Gender</h2>
+      <p>First-class Jewellery for first-class Men, Women & Children.</p>
+      <br><br>
+      <div class="guides-container1">
+          <div class="guide-card1">
+
+              <img src="./Images/Men.webp" alt="Men Image">
+              <a href="#" class="explore-btn1">Explore More →</a>
+          </div>
+
+          <div class="guides-container1">
+            <div class="guide-card1">
+                <!-- <h3>Find Your Ring Size</h3> -->
+                <img src="./Images/kid.jpg" alt="Kid Image">
+                <a href="#" class="explore-btn1">Explore More →</a>
+            </div> 
+
+             <div class="guides-container1">
+              <div class="guide-card1">
+                  <!-- <h3>Find Your Ring Size</h3> -->
+                  <img src="./Images/Woman.webp" alt="Woman Image">
+                  <a href="#" class="explore-btn1">Explore More →</a>
+              </div>
+
+               <div class="guides-container1">
+                <div class="guide-card1">
+                    <!-- <h3>Find Your Ring Size</h3> -->
+                    <img src="./Images/get_together.jpg" alt="Get together  Image">
+                    <a href="#" class="explore-btn1">Explore More →</a>
+                </div> 
+
+
+      </div> 
+  </section>
+
+   
+      <!-- Trending Offers Section -->
+      <section class="offers" id="offers">
+        <h2>Trending Offers</h2>
+        <p>Our latest releases, just for you !</p>
+       <br><br>
+        <div class="offers-container">
+            <div class="offer-card">
+                <img src="./Images/ring_1.jpg" alt="Diamond Ring">
+                <h3> Diamond Ring</h3>
+                <p>25% off - Limited Time Offer!</p>
+                <button>Shop Now</button>
+            </div>
+
+
+            <div class="offers-container">
+              <div class="offer-card">
+                  <img src="./Images/pandant.jpeg" alt="pandant">
+                  <h3>Pendant Necklace</h3>
+                  <p>Flash Sale - 25% off All Necklaces!</p>
+                  <button>Shop Now</button>
+              </div>
+
+
+
+
+            <div class="offer-card">
+                <img src="./Images/trending_2.webp" alt="Gold Necklace">
+                <h3>Gold Necklace</h3>
+                <p>15% off - Exclusive Deal!</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="offer-card">
+                <img src="./Images/trending_3.2.webp" alt="Silver Bracelet">
+                <h3>Silver Bracelet</h3>
+                <p>Buy 1 Get 1 Free!</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+
+
+<br>
+  
+  <iframe width="1900" height="780" src="https://www.youtube.com/embed/sNiKPw4lagY?si=15zNs_PCdzr9WGvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+  <br>
+
+  <iframe width="1900" height="780" src="https://www.youtube.com/embed/73jbdiksIzg?si=QYFHKkxyOXT3G0et" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <br>
+
+ 
+
+
+<!-- Contact Section -->
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <b>We'd love to hear from you! Choose how you'd like to connect with us:</b>
+  <br><br><br>
+  <div class="contact-options">
+
+ <!-- Connect on Facebook -->
+ <a href="https://www.facebook.com/glamkey.glam" class="contact-card" target="_blank">
+  <img src="./Images/fb_1.png" alt="Facebook">
+  <h3>Connect on Facebook</h3>
+  <p>Follow us and send us a message.</p>
+</a>
+
+
+      <a href="https://wa.me/yourphonenumber" class="contact-card" target="_blank">
+          <img src="./Images/watsapp_1.jpeg" alt="WhatsApp">
+          <h3>Connect on WhatsApp</h3>
+          <p>Chat with us for quick inquiries.</p>
+      </a>
+      
+      <a href="https://calendly.com/your-calendar-link" class="contact-card" target="_blank">
+          <img src="./Images/book_1.png" alt="Book Appointment">
+          <h3>Book an Appointment</h3>
+          <p>Schedule a personal visit to our store.</p>
+      </a>
+
+      <a href="https://zoom.us/your-zoom-link" class="contact-card" target="_blank">
+          <img src="./Images/zoom_call.png" alt="Video Call">
+          <h3>Schedule a Video Call</h3>
+          <p>Meet us virtually for a consultation.</p>
+      </a>
+  </div>
+</section>
+
+
+
+
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 JewelsCo. All rights reserved.</p>
+  </footer>
+  <script src="script.js">
+
+
+  </script>
+
+
+<!-- Chatbox Icon -->
+<div class="chatbox-icon" onclick="openChat()">
+💬
+</div>
+
+<!-- Chatbox Form -->
+<div class="chatbox" id="chatbox">
+<div class="chatbox-header">
+  <span>Send a Message</span>
+  <button onclick="closeChat()">✖</button>
+</div>
+<form id="messageForm">
+
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Your Email:</label>
+  <input type="email" id="email" name="email" required>
+
+   <label for="message">Your Message:</label>
+   <textarea id="message" name="message" rows="5" required></textarea>
+
+  <button type="submit">Send</button>
+</form>
+</div>
+
+<script>
+        // JavaScript to display the alert message
+        document.getElementById('messageForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            alert('Thank you! We will reach you soon.');
+            // Optionally, reset the form fields after submission
+            document.getElementById('messageForm').reset();
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
